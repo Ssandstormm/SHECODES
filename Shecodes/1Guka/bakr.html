@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/st.css">
+  <link rel="icon" type="image/icon" href="css/favicon.ico">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<style type="text/css">
+  body{
+
+    background-image: url("_assets/background.PNG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+</style>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #ff6972;">
+      <a class="navbar-brand" href="index.html">Zapis</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Астана <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bakr.html">Игра</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rank.html">Рейтинг</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Сервисы
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Маникюр</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Брови</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Косметология</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"   data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Контакты</a>
+            </a>
+            <div style="height: 0px;" >
+              <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 150px;">
+                 87776665544
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+    <br/>
+
+  </header>
+
+
+
+
+<div>
+  <center>
+    <legend style="margin-top: 20px; font-family: "Lucida Console", "Courier New", monosapce">Guess the word</legend>
+
+          <input type="text" id="inc" value="0" style = "width: 45px; height: 30px; border-radius: 25%; text-align: center; border-color:  #ff6972; background-color:white" ></input>  </center>
+      <p></p>
+  <center>
+    <div>
+      <img id="iii" src="_assets/Фото1.png" alt="shecodes" width="30%">
+    </div>
+
+    <form>
+
+        <p></p>
+          <input type="text" placeholder="Your guess" style="text-align: center; border-color: #ff6972;
+    border-radius: 9%;" onblur="getVal()">
+        <br>
+      <p>
+
+      </p>
+
+      <button onclick="myFunction(),increment(); return false;" id="btnPause">Commit</button>
+
+      <p>
+
+      </p>
+
+
+      <script>
+        const arr = ["assets/Фото1.png", "assets/Фото2.jpeg", "assets/Фото3.jpeg", "assets/Фото4.jpeg"];
+        function myFunction() {
+          alert("Great!");
+        }
+        var i = 0;
+        function increment(){
+          document.getElementById('inc').value = ++i;
+          document.getElementById('iii').src=arr[i];
+        }
+      </script>
+    </form>
+
+
+  </center>
+
+
+
+
+
+</div>
+</div>
+<script>
+  function getVal() {
+    const val = document.querySelector('input').value;
+
+  }
+  getVal();
+  function yourGuess() {
+    // You can store references to the value and the
+    // guesses textarea in local function variables.
+
+    photo=imageArray[caption]
+
+    // First, if the guess is the same, just show the answer.
+    // Append onto the textarea the result.
+    if (val === photo) {
+      console.log("+1 point")
+    }
+    else {
+      console.log("try again")
+    }
+  }
+
+  yourGuess();
+
+
+
+</script>
+</body>
+
+</html>
